@@ -1,0 +1,83 @@
+body{
+    margin:0 auto;
+    padding: 30px;
+    overflow: hidden;
+    background-color: rgb(31, 31, 31);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.canvas{
+    box-shadow: -3px 2px 9px 6px black;
+    cursor:crosshair;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.tools .color-field{
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid white;
+    align-self: center;
+    margin: 0 15px;
+}
+
+.tools .button {
+    align-self: center;
+    width: 80px;
+    height: 40px;
+    border:2px solid white;
+    cursor: pointer;
+    color: white;
+    background-color: #222;
+    font-weight: bold;
+    margin: 0 7px;
+}
+
+.button {
+    align-self: center;
+    width: 80px;
+    height: 40px;
+    border:2px solid white;
+    cursor: pointer;
+    color: white;
+    background-color: #222;
+    font-weight: bold;
+    margin: 0 7px;
+} 
+
+.color-picker{
+    align-self: center;
+    margin: 0 10px;
+    height: 50px;
+}
+
+.pen-range{
+    align-self: center;
+    margin: 0 10px;
+}
+
+.checkboxes{
+    color:white;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.buttons, .colors, .inputs{
+    margin-bottom: 30px;
+}

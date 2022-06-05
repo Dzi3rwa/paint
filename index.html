@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="field">
+        <canvas id="canvas" class="canvas"></canvas>
+        <div class="tools">
+            <div class="buttons">
+                <button onclick="undo_last()" type="button" class="button">Undo</button>
+                <button onclick="clear_canvas()" type="button" class="button">Clear</button>
+            </div>
+            <div class="colors">
+                <div onclick="change_color(this)" class="color-field" style="background-color: red;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background-color: blue;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background-color: green;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background-color: yellow;"></div>
+                <input oninput="draw_color = this.value" type="color" class="color-picker">
+            </div>
+            <div class="inputs">
+                <input id="range" oninput="draw_width = this.value" type="range" min="1" max="50" class="pen-range">
+                <button id="download" type="button" class="button">Download</button>
+            </div>
+        </div>
+        <div class="tools">
+            <div class="buttons">
+                <button id="pen" class="button">Pen</button>
+                <button id="square" class="button">Rectangle</button>
+                <button id="circle" class="button">Circle</button>
+                <button id="line" class="button">Line</button>
+            </div>
+            <div class="checkboxes">
+                <div>Fill: <input id="inputCheckbox1" type="checkbox" onchange="checkbox1 = this.checked"></div>
+                <div>Proportions: <input id="inputCheckbox2" type="checkbox" onchange="checkbox2 = this.checked">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
